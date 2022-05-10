@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="prueba_tecnica.list">
+      <field name="name">prueba_tecnica list</field>
+      <field name="model">prueba_tecnica.prueba_tecnica</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>  
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+    <!-- check names in this action it's id "prueba_tecnica" or "prueba_tecnica.persona" -->
+
+
+    <record model="ir.actions.act_window" id="persona_action_window">
+      <field name="name">personas</field>
+      <field name="res_model">prueba_tecnica.persona</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html" >
+          <p class= "o_view_nocontent_smiling_face"> 
+            Crea el primer registro de persona
+          </p>
+      </field>
+    </record>
+
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="Gestion de usuarios" id="persona_menu_root" sequence="1" />
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu 1" id="persona_menu_1" parent="persona_menu_root" sequence="2" />
+    <menuitem name="Menu 2" id="persona_menu_2" parent="persona_menu_1" sequence="3"  action="persona_action_window" />
+
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="prueba_tecnica.menu_1_list" parent="prueba_tecnica.menu_1"
+              action="prueba_tecnica.action_window"/>
+    <menuitem name="Server to list" id="prueba_tecnica" parent="prueba_tecnica.menu_2"
+              action="prueba_tecnica.action_server"/>
+-->
+  </data>
+</odoo>

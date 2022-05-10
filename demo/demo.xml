@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+
+          <record id="object0" model="prueba_tecnica.persona">
+            <field name="nombre">Maria</field>
+            <field name="cedula">026011908</field>
+            <field name="correo">maria@gmail.com</field>
+            <field name="telefono">80978683</field>
+            <field name="f_nacimiento">00/00/0000</field>
+            <field name="direction">Lo mina</field>            
+          </record>
+
+    </data>
+</odoo>
