@@ -22,9 +22,8 @@ Si su sistema operativo es **windows**, para instalar odoo14, necesita:
 - Descomprime la carpeta en el escritorio.
 Este pequeño tutorial te sera de ayuda: https://youtu.be/WVmL-rdPBwA
 
-**Pasos para correr el proyecto
-**
-1. ``git clone ```
+**Pasos para correr el proyecto**
+1. ```git clone https://github.com/koryroot/gestion_usuarios.git```
   
 
 
